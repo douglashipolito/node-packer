@@ -67,3 +67,15 @@ Then fix conflicts (if any).
 ### Squash changes
 
     git reset --soft origin/master
+
+### Fixing Ncurses fails to build with gcc
+
+If you are having some issue with Ncurses like the one described below:
+
+https://trac.sagemath.org/ticket/19762
+
+Just export this variable in your shell:
+
+```shell
+$ export CPPFLAGS="-P"
+```

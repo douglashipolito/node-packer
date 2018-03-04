@@ -107,16 +107,13 @@ char* autoupdate_tmpdir()
 {
 	char *try_try;
 	size_t length;
-	try_try = getenv("TMPDIR");
+	try_try = getenv("NODEAPP_AUTOUPDATE_TMPDIR");
 	if (try_try) {
 		goto out;
 	}
-	try_try = getenv("TMP");
-	if (try_try) {
-		goto out;
-	}
-	try_try = getenv("TEMP");
-	if (try_try) {
+	char cwd[1024];
+    if (getcwd(cwd, sizeof(cwd)) != NULL) {
+		try_try = cwd;
 		goto out;
 	}
 	try_try = "/tmp";

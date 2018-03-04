@@ -1,5 +1,10 @@
 # Node.js Compiler Changelog
 
+## v1.6.0@0.0.1
+
+- Changing the default tempdir path to the current executable's path in order to avoid the issue with `rename` regarding to replacing itself when TMPDIR and current file is not on the same volume.
+  - A system env variable `NODEAPP_AUTOUPDATE_TMPDIR` so that this tmpdir can be changed if necessary by setting this variable.
+
 ## v1.6.0
 
 - upgrade Node.js runtime to v8.4.0

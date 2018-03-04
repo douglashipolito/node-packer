@@ -24,11 +24,7 @@ It takes less than 5 minutes to compile any project with `node-compiler`.
 
 You won't need to modify a single line of code in your application, no matter how you developed it as long as it works in plain node.js!
 
-|    Operating System   | Architecture |           Latest&#160;Stable                 |
-|:---------------------:|:------------:|----------------------------------------------|
-|        Windows        |    x86-64    | http://enclose.io/nodec/nodec-x64.zip        |
-|         macOS         |    x86-64    | http://enclose.io/nodec/nodec-darwin-x64.gz  |
-|         Linux         |    x86-64    | http://enclose.io/nodec/nodec-linux-x64.gz   |
+In order download the latest version, look at: [https://github.com/douglashipolito/node-packer/releases/latest](https://github.com/douglashipolito/node-packer/releases/latest)
 
 For previous releases, cf. http://enclose.io/nodec
 
@@ -45,7 +41,7 @@ First install the prerequisites:
   - [Visual Studio 2017](https://www.visualstudio.com/downloads/), any edition (including the Build Tools SKU).
   __Required Components:__ "MSbuild", "VC++ 2017 v141 toolset" and one of the Windows SDKs (10 or 8.1).
 
-Then download [nodec-x64.zip](http://enclose.io/nodec/nodec-x64.zip), and this zip file contains only one executable. Unzip it. Optionally, rename it to `nodec.exe` and put it under `C:\Windows` (or any other directory that is part of `PATH`). Execute `nodec` from the command line.
+Then download [nodec-x64.zip](https://github.com/douglashipolito/node-packer/releases/latest), and this zip file contains only one executable. Unzip it. Optionally, rename it to `nodec.exe` and put it under `C:\Windows` (or any other directory that is part of `PATH`). Execute `nodec` from the command line.
 
 ### Install on Linux
 
@@ -59,9 +55,14 @@ First install the prerequisites:
 * Python 2.6 or 2.7
 * GNU Make 3.81 or newer
 
+Download the executable at:
+
+[https://github.com/douglashipolito/node-packer/releases/latest](https://github.com/douglashipolito/node-packer/releases/latest)
+
+Go to the folder where you downloaded the and unzip it and open a terminal session.
+
 Then,
 
-    curl -L http://enclose.io/nodec/nodec-linux-x64.gz | gunzip > nodec
     chmod +x nodec
     ./nodec
     
@@ -77,9 +78,14 @@ First install the prerequisites:
 * Python 2.6 or 2.7
 * GNU Make 3.81 or newer
 
+Download the executable at:
+
+[https://github.com/douglashipolito/node-packer/releases/latest](https://github.com/douglashipolito/node-packer/releases/latest)
+
+Go to the folder where you downloaded the and unzip it and open a terminal session.
+
 Then,
 
-    curl -L http://enclose.io/nodec/nodec-darwin-x64.gz | gunzip > nodec
     chmod +x nodec
     ./nodec
 
